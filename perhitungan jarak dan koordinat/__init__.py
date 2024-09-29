@@ -1,0 +1,3 @@
+# Inisialisasi package
+ 
+import numpy
