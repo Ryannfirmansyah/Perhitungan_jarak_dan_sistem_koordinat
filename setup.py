@@ -1,15 +1,23 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='manajemen_keuangan_pribadi',
-    version='0.1',
+    name="perhitungan_jarak_koordinat",
+    version="0.1.0",
+    author="Nama Tim",
+    author_email="email@domain.com",
+    description="Package untuk perhitungan jarak dan fungsi sistem koordinat geografis",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="",
     packages=find_packages(),
-    install_requires=['pandas', 'matplotlib'],
-    author='Nama Tim',
-    description='Library untuk mengelola keuangan pribadi',
-    url='',
-    classifiers=[
-        'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+    install_requires=[
+        "geopy",  # library eksternal yang mungkin diperlukan
+        "numpy",
     ],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.6',
 )
