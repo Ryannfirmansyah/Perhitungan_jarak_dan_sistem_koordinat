@@ -3,8 +3,8 @@ from setuptools import setup, find_packages
 setup(
     name="perhitungan_jarak_koordinat",
     version="0.1.0",
-    author="Nama Tim",
-    author_email="email@domain.com",
+    author="Kelompok 1 Algoritma & Pemrograman B",
+    author_email="",
     description="Package untuk perhitungan jarak dan fungsi sistem koordinat geografis",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",

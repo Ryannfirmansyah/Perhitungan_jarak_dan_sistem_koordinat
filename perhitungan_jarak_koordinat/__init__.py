@@ -1,3 +1,2 @@
-# Inisialisasi package
- 
-import numpy
+
+
