@@ -4,7 +4,8 @@
 
 def hitung_jarak_ke_titik_pusat(lat, lon, lat_pusat, lon_pusat):
     """
-    Menghitung jarak antara dua titik berdasarkan koordinat geografis (dalam derajat)
+    Menghitung jarak
+     antara dua titik berdasarkan koordinat geografis (dalam derajat)
     menggunakan rumus Haversine tanpa menggunakan modul math.
 
     Parameters:
