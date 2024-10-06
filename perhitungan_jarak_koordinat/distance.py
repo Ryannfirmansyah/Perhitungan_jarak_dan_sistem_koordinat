@@ -1,7 +1,4 @@
 #(point, center_point): Fungsi untuk menghitung jarak ke titik pusat.
-#RYANNN
-
-
 def hitung_jarak_ke_titik_pusat(lat, lon, lat_pusat, lon_pusat):
     """
     Menghitung jarak antara dua titik berdasarkan koordinat geografis (dalam derajat)
