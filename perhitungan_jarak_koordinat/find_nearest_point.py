@@ -31,12 +31,3 @@ def titik_terdekat(titik_pusat, kumpulan_titik):
     return titik_terdekat
 
 # Contoh penggunaan
-titik_pusat = (140.705001, -4.568315)  # Jayapura
-kumpulan_titik = [
-    ("Sorong", (140.366211, -3.721235)),  # Sorong
-    ("Manokwari", (137.166722, -4.043775)),  # Manokwari
-    ("Timika", (138.174971, -3.830016))   # Timika
-]
-
-titik_terdekat = titik_terdekat(titik_pusat, kumpulan_titik)
-print(f"Titik terdekat dari Jayapura adalah {titik_terdekat[0]} dengan koordinat {titik_terdekat[1]}")
