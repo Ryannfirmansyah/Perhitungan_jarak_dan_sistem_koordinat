@@ -1,8 +1,5 @@
 # (points, reference_point): Fungsi untuk mencari titik terdekat dari kumpulan titik.
 #ANGEL
-<<<<<<< HEAD
-=======
-
 def haversine(longitude1, latitude1, longitude2, latitude2):
     R = 6371  # Radius bumi dalam kilometer
     pi = 3.141592653589793
@@ -31,6 +28,3 @@ def titik_terdekat(titik_pusat, kumpulan_titik):
             titik_terdekat = (nama_kota, titik)
             
     return titik_terdekat
-
-# Contoh penggunaan
->>>>>>> 1944782448e26f447a1783d8da4cbc8cf65163b5
