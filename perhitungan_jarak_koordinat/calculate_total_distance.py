@@ -2,10 +2,9 @@
 # SITI
 # my_package/calculate_total_distance.py
 
-def jt(titik):
+def jarak_total(titik):
     total_jarak = 0.0
 
-    # Menghitung jarak antara setiap titik berturut-turut
     for i in range(len(titik) - 1):
         x1, y1 = titik[i]
         x2, y2 = titik[i + 1]
