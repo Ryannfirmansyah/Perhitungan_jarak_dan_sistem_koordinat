@@ -1,5 +1,6 @@
 # Fungsi untuk konversi kilometer ke meter.
 #JABBAR
+<<<<<<< HEAD
 def konv_m(ukuran, jenis="meter"):
     if jenis == "km":
          hasil = ukuran / 1000
@@ -20,3 +21,5 @@ def konv_m(ukuran, jenis="meter"):
 
 
 
+=======
+>>>>>>> main
