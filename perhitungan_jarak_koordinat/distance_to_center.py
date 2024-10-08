@@ -19,4 +19,3 @@ def distance(lat, lon, lat_pusat, lon_pusat):
     # Menghitung jarak
     jarak = R * c
     return jarak
-
