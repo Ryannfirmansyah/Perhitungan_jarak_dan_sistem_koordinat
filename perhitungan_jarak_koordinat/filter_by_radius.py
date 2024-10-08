@@ -28,7 +28,7 @@ def saring_radius(lat1, lon1, lat2, lon2):
     jarak = R * c
     return jarak
 
-def saring_wilayah_berdasarkan_radius(locations, center_lat, center_lon, radius):
+def filtered(locations, center_lat, center_lon, radius):
     # Lokasi yang berada dalam radius
     filtered_locations = []
     
@@ -73,4 +73,3 @@ def atan2(y, x):
 
 def atan(x):
     return x - (x**3 / 3) + (x**5 / 5) - (x**7 / 7)
-
