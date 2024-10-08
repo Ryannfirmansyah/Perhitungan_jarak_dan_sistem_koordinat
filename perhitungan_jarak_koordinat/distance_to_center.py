@@ -1,4 +1,5 @@
 #(point, center_point): Fungsi untuk menghitung jarak ke titik pusat.
+#RYANNN
 def distance(lat, lon, lat_pusat, lon_pusat):
     # Radius bumi dalam kilometer
     R = 6371.0
