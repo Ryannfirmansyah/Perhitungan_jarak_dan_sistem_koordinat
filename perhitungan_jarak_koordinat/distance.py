@@ -1,7 +1,5 @@
 #(point, center_point): Fungsi untuk menghitung jarak ke titik pusat.
-<<<<<<< HEAD:perhitungan_jarak_koordinat/distance_to_center.py
 #RYANNN
-=======
 def hitung_jarak_ke_titik_pusat(lat, lon, lat_pusat, lon_pusat):
     # Radius bumi dalam kilometer
     R = 6371.0
@@ -21,4 +19,4 @@ def hitung_jarak_ke_titik_pusat(lat, lon, lat_pusat, lon_pusat):
     # Menghitung jarak
     jarak = R * c
     return jarak
->>>>>>> main:perhitungan_jarak_koordinat/distance.py
+
