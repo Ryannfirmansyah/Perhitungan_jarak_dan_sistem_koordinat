@@ -21,7 +21,7 @@ Untuk menginstal package ini, Anda dapat menggunakan pip:
 ```bash
 pip install Perhitungan_jarak_dan_sistem_koordinat
 ```
-
+### Dalam modul calculate_distance
 ### 1. Fungsi `midpoint(lat_makassar: float, lon_makassar: float, lat_jakarta: float, lon_jakarta: float) -> tuple`
 - **Parameter**:
   - `lat_makassar` (float): Latitude dari Makassar.
@@ -34,7 +34,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   mid_lat, mid_lon = midpoint(-5.147665, 119.432731, -6.208763, 106.845599)
   print(f"Titik tengah antara Makassar dan Jakarta adalah: {mid_lat}, {mid_lon}")
   ```
-
+### Dalam modul degrees_to_radians
 ### 2. Fungsi `drjt_rd(degree: float) -> float`
 - **Parameter**:
   - `degree` (float): Nilai derajat yang akan dikonversi ke radian.
@@ -44,7 +44,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   hasil = drjt_rd(90)
   print(hasil)  # Output: 1.5708
   ```
-
+### Dalam modul distance_to_center
 ### 3. Fungsi `distance(lat1: float, lon1: float, lat2: float, lon2: float) -> float`
 - **Parameter**:
   - `lat1` (float): Latitude dari titik pertama.
@@ -57,7 +57,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   jarak = distance(-5.1333128, 119.4884481, -5.23026, 119.4995591)
   print(f"Jarak dari Unhas ke Unhas Gowa adalah {jarak:.1f} km")
   ```
-
+### Dalam modul estimate_travel_time
 ### 4. Fungsi `e2t(jarak: float, kecepatan: float) -> float`
 - **Parameter**:
   - `jarak` (float): Jarak yang akan ditempuh dalam kilometer.
@@ -68,7 +68,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   waktu_tempuh = e2t(120, 60)
   print(f"Waktu tempuh untuk jarak 120 km dengan kecepatan 60 km/jam adalah: {waktu_tempuh:.2f} jam")
   ```
-
+### Dalam modul filter_by_radius
 ### 5. Fungsi `filtered(locations: dict, center_lat: float, center_lon: float, radius: float) -> list`
 - **Parameter**:
   - `locations` (dict): Dictionary berisi nama lokasi sebagai kunci dan tuple (latitude, longitude) sebagai nilai.
@@ -91,7 +91,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   for kota in hasil_filter:
       print(kota)
   ```
-
+### Dalam modul find_nearest_point
 ### 6. Fungsi `titik_terdekat(titik_pusat: tuple, kumpulan_titik: list) -> tuple`
 - **Parameter**:
   - `titik_pusat` (tuple): Tuple berisi (longitude, latitude) dari titik pusat.
@@ -109,7 +109,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   titik_terdekat = titik_terdekat(titik_pusat, kumpulan_titik)
   print(f"Titik terdekat dari Jayapura adalah {titik_terdekat[0]} dengan koordinat {titik_terdekat[1]}")
   ```
-
+### Dalam modul calculate_total_distance
 ### 7. Fungsi `jarak_total(titik_input: list) -> float`
 - **Parameter**:
   - `titik_input` (list): List berisi tuple yang terdiri dari koordinat titik (longitude, latitude).
@@ -120,7 +120,7 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
   total_jarak = jarak_total(titik_input)
   print("Total jarak adalah:", total_jarak)
   ```
-
+### Dalam modul km_to_m
 ### 8. Fungsi `konv_m(nilai: float, satuan: str) -> float`
 - **Parameter**:
   - `nilai` (float): Nilai jarak yang akan dikonversi.
