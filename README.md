@@ -1,3 +1,4 @@
+
 # Perhitungan_jarak_dan_sistem_koordinat
 
 `Perhitungan_jarak_dan_sistem_koordinat` adalah sebuah package Python yang dirancang untuk membantu programmer melakukan perhitungan jarak dan sistem koordinat, serta berbagai fitur terkait lainnya.
@@ -23,7 +24,9 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
 
 ## Contoh Penggunaan Package
 
-### 1. Fungsi untuk Menghitung Jarak Tengah Antar Koordinat
+### 1. Fungsi midpoint
+
+Fungsi ini menghitung titik tengah antara dua koordinat (latitude dan longitude).
 
 ```python
 # Koordinat Makassar dan Jakarta
@@ -37,16 +40,20 @@ mid_lat, mid_lon = midpoint(lat_makassar, lon_makassar, lat_jakarta, lon_jakarta
 print(f"Titik tengah antara Makassar dan Jakarta adalah: {mid_lat}, {mid_lon}")
 ```
 
-### 2. Fungsi untuk Mengubah Derajat ke Radian
+### 2. Fungsi drjt_rd
+
+Fungsi ini mengonversi nilai dalam derajat ke radian, yang sering diperlukan dalam perhitungan trigonometri.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.degrees_to_radians import drjt_rd
 
 hasil = drjt_rd(90, 0)
-print(hasil)
+print(hasil)  # Output: 1.5708
 ```
 
-### 3. Fungsi untuk Menghitung Jarak ke Titik Pusat
+### 3. Fungsi distance
+
+Fungsi ini menghitung jarak antara dua titik berdasarkan koordinat latitude dan longitude mereka.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.distance_to_center import distance
@@ -63,7 +70,9 @@ jarak = distance(lat_unhas, lon_unhas, lat_unhas_gowa, lon_unhas_gowa)
 print(f"Jarak dari Unhas ke Unhas Gowa adalah {jarak:.1f} km")
 ```
 
-### 4. Fungsi untuk Menghitung Estimasi Waktu
+### 4. Fungsi e2t
+
+Fungsi ini memperkirakan waktu tempuh berdasarkan jarak dan kecepatan yang diberikan.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.estimate_travel_time import e2t
@@ -75,7 +84,9 @@ waktu_tempuh = e2t(jarak, kecepatan)
 print(f"Waktu tempuh untuk jarak {jarak} km dengan kecepatan {kecepatan} km/jam adalah: {waktu_tempuh}")
 ```
 
-### 5. Fungsi Menyaring Wilayah Berdasarkan Radius Tertentu
+### 5. Fungsi saring_radius
+
+Fungsi ini menyaring lokasi-lokasi yang berada dalam radius tertentu dari titik pusat yang diberikan.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.filter_by_radius import saring_radius, filtered
@@ -103,7 +114,9 @@ for kota in hasil_filter:
     print(kota)
 ```
 
-### 6. Fungsi Mencari Titik Terdekat
+### 6. Fungsi titik_terdekat
+
+Fungsi ini menemukan titik terdekat dari titik pusat yang diberikan dari kumpulan titik yang tersedia.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.find_nearest_points import titik_terdekat
@@ -119,7 +132,9 @@ titik_terdekat = titik_terdekat(titik_pusat, kumpulan_titik)
 print(f"Titik terdekat dari Jayapura adalah {titik_terdekat[0]} dengan koordinat {titik_terdekat[1]}")
 ```
 
-### 7. Fungsi Menentukan Jarak Total untuk Beberapa Titik
+### 7. Fungsi jarak_total
+
+Fungsi ini menghitung total jarak dari sekumpulan titik dengan urutan tertentu.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.calculate_total_distance import jarak_total
@@ -137,10 +152,13 @@ total_jarak = jarak_total(titik_input)
 print("Total jarak dari Gowa ke Makassar, Maros, dan kembali ke Gowa adalah:", total_jarak)
 ```
 
-### 8. Fungsi Mengubah Satuan Jarak
+### 8. Fungsi konv_m
+
+Fungsi ini mengonversi jarak dari satuan tertentu ke satuan lainnya, seperti dari meter ke kilometer.
 
 ```python
 from perhitungan_jarak_dan_sistem_koordinat.km_to_m import konv_m
 
 hasil_km = konv_m(5, "km")
 print(f"5 meter dalam kilometer: {hasil_km} km")
+```
