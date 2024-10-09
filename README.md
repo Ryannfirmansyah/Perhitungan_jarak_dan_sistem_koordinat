@@ -1,4 +1,26 @@
 ## Deskripsi Tipe Data dan Contoh Penggunaan
+# Perhitungan_jarak_dan_sistem_koordinat
+
+`Perhitungan_jarak_dan_sistem_koordinat` adalah sebuah package Python yang dirancang untuk membantu programmer melakukan perhitungan jarak dan sistem koordinat, serta berbagai fitur terkait lainnya.
+
+## Fitur
+
+- **Fungsi untuk Menghitung Jarak Tengah Antar Koordinat**
+- **Fungsi untuk Mengubah Derajat ke Radian**
+- **Fungsi untuk Menghitung Jarak ke Titik Pusat**
+- **Fungsi untuk Menghitung Estimasi Waktu**
+- **Fungsi Menyaring Wilayah Berdasarkan Radius Tertentu**
+- **Fungsi Mencari Titik Terdekat**
+- **Fungsi Menentukan Jarak Total untuk Beberapa Titik**
+- **Fungsi Mengubah Satuan Jarak**
+
+## Instalasi
+
+Untuk menginstal package ini, Anda dapat menggunakan pip:
+
+```bash
+pip install Perhitungan_jarak_dan_sistem_koordinat
+```
 
 ### 1. Fungsi `midpoint(lat_makassar: float, lon_makassar: float, lat_jakarta: float, lon_jakarta: float) -> tuple`
 - **Parameter**:
