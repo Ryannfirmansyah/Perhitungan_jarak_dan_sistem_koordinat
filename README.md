@@ -56,7 +56,7 @@ print(f"Jarak dari unhas ke unhas_gowa adalah {jarak:.1f} km")
 
 
 #5. ⁠Fungsi Menyaring Wilayah Berdasarkan Radius Tertentu
-from perhitungan_jarak_koordinat.filter_by_radius import saring_radius
+from perhitungan_jarak_koordinat.filter_by_radius import saring_radius, filtered
 # Daftar lokasi dengan nama kota dan koordinat (latitude, longitude)
 locations = {
     "Surabaya": (-7.250445, 112.768845),
