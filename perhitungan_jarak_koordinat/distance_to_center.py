@@ -1,6 +1,21 @@
 #(point, center_point): Fungsi untuk menghitung jarak ke titik pusat.
 #RYANNN
-def distance(lat, lon, lat_pusat, lon_pusat):
+
+
+def hitung_jarak_ke_titik_pusat(lat, lon, lat_pusat, lon_pusat):
+    """
+    Menghitung jarak antara dua titik berdasarkan koordinat geografis (dalam derajat)
+    menggunakan rumus Haversine tanpa menggunakan modul math.
+
+    Parameters:
+    lat (float): Latitude titik.
+    lon (float): Longitude titik.
+    lat_pusat (float): Latitude titik pusat.
+    lon_pusat (float): Longitude titik pusat.
+
+    Returns:
+    float: Jarak dalam kilometer.
+    """
     # Radius bumi dalam kilometer
     R = 6371.0
 
