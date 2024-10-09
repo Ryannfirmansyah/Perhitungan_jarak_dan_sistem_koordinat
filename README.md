@@ -17,12 +17,12 @@ pip install Perhitungan_jarak_dan_sistem_koordinat
 CONTOH PENGGUNAAN PACKAGE
 
 #1. Fungsi untuk Menghitung Jarak Tengah Antar Koordinat
-# Koordinat Makassar dan Jakarta
+#Koordinat Makassar dan Jakarta
 lat_makassar = -5.147665
 lon_makassar = 119.432731
 lat_jakarta = -6.208763
 lon_jakarta = 106.845599
-# Memanggil fungsi hitung_midpoint
+#Memanggil fungsi hitung_midpoint
 mid_lat, mid_lon = midpoint(lat_makassar, lon_makassar, lat_jakarta, lon_jakarta)
 print(f"Titik tengah antara Makassar dan Jakarta adalah: {mid_lat}, {mid_lon}")
 
@@ -35,13 +35,13 @@ print(hasil)
 
 #3. ⁠Fungsi untuk Menghitung jarak ke titik pusat
 from perhitungan_jarak_koordinat.distance_to_center import distance
-# Koordinat Unhas Tamalanrea
+#KoordinatUnhasTamalanrea
 lat_unhas = -5.1333128
 lon_unhas = 119.4884481
-# Koordinat Unhas Gowa
+#Koordinat Unhas Gowa
 lat_unhas_gowa = -5.23026
 lon_unhas_gowa = 119.4995591
-# Menghitung jarak menggunakan fungsi distance
+#Menghitung jarak menggunakan fungsi distance
 jarak = distance(lat_unhas, lon_unhas, lat_unhas_gowa, lon_unhas_gowa)
 print(f"Jarak dari unhas ke unhas_gowa adalah {jarak:.1f} km")
 
@@ -56,7 +56,7 @@ print(f"Waktu tempuh untuk jarak {jarak} km dengan kecepatan {kecepatan} km/jam 
 
 #5. ⁠Fungsi Menyaring Wilayah Berdasarkan Radius Tertentu
 from perhitungan_jarak_koordinat.filter_by_radius import saring_radius, filtered
-# Daftar lokasi dengan nama kota dan koordinat (latitude, longitude)
+#Daftar lokasi dengan nama kota dan koordinat (latitude, longitude)
 locations = {
     "Surabaya": (-7.250445, 112.768845),
     "Medan": (3.595196, 98.672226),
@@ -64,13 +64,13 @@ locations = {
     "Bandung": (-6.917464, 107.619123),
     "Banjarmasin": (-3.316694, 114.590111)
 }
-# Titik pusat Jakarta dan radius 1000 km
+#Titik pusat Jakarta dan radius 1000 km
 center_lat = -6.208763
 center_lon = 106.845599
 radius = 1000  # dalam kilometer
-# Memanggil fungsi untuk menyaring lokasi
+#Memanggil fungsi untuk menyaring lokasi
 hasil_filter = filtered(locations, center_lat, center_lon, radius)
-# Output hasil filter
+#Output hasil filter
 print("Kota dalam radius", radius, "km dari Jakarta:")
 for kota in hasil_filter:
     print(kota)
@@ -90,14 +90,14 @@ print(f"Titik terdekat dari Jayapura adalah {titik_terdekat[0]} dengan koordinat
 
 #7. ⁠Fungsi Menentukan Jarak Total untuk Beberapa Titik
 from perhitungan_jarak_koordinat.calculate_total_distance import jarak_total
-# Daftar titik yang ingin dihitung jaraknya
+#Daftar titik yang ingin dihitung jaraknya
 titik_input = [(1, 2),  # Gowa (rumah)
                (4, 6),  # Makassar
                (7, 3),  # Maros
                (1, 2)]  # Kembali ke Gowa
-# Memanggil fungsi dan menyimpan total jarak
+#Memanggil fungsi dan menyimpan total jarak
 total_jarak = jarak_total(titik_input)
-# Mencetak total jarak
+#Mencetak total jarak
 print("Total jarak dari Gowa ke Makassar, Maros, dan kembali ke Gowa adalah:", total_jarak)
 
 
