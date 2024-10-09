@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="perhitungan_jarak_koordinat",
+    name="mapsku",
     version="1.0",
     author="Kelompok 1 Algoritma & Pemrograman B",
     description="Package untuk perhitungan jarak dan fungsi sistem koordinat geografis",
