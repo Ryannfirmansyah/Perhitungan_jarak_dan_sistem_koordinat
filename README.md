@@ -53,7 +53,13 @@ jarak = distance(lat_unhas, lon_unhas, lat_unhas_gowa, lon_unhas_gowa)
 print(f"Jarak dari unhas ke unhas_gowa adalah {jarak:.1f} km")
 
 #4. ⁠Fungsi untung Menghitung estimasi waktu
+from estimate_travel_time import e2t
 
+#Input jarak dan kecepatan
+jarak = 120  # kilometer
+kecepatan = 60  # kilometer per jam
+waktu_tempuh = e2t(jarak, kecepatan)
+print(f"Waktu tempuh untuk jarak {jarak} km dengan kecepatan {kecepatan} km/jam adalah: {waktu_tempuh}")
 
 #5. ⁠Fungsi Menyaring Wilayah Berdasarkan Radius Tertentu
 from perhitungan_jarak_koordinat.filter_by_radius import saring_radius, filtered
