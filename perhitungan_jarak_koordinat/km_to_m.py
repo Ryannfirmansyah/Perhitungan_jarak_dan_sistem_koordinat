@@ -1,6 +1,5 @@
 # Fungsi untuk konversi kilometer ke meter.
 #JABBAR
-<<<<<<< HEAD
 def konv_m(ukuran, jenis="meter"):
     if jenis == "km":
          hasil = ukuran / 1000
@@ -17,9 +16,3 @@ def konv_m(ukuran, jenis="meter"):
     elif jenis == "yard":
          hasil = ukuran / 0.9144
     return round(hasil, 3)
-
-
-
-
-=======
->>>>>>> main
