@@ -1,7 +1,7 @@
 #(points, center_point, radius): Fungsi untuk menyaring wilayah berdasarkan radius tertentu.
 #FERA
 
-def saring_radius(lat1, lon1, lat2, lon2):
+def jarak(lat1, lon1, lat2, lon2):
     # Konversi derajat ke radian
     def to_radian(degree):
         return degree * (3.141592653589793 / 180)
@@ -28,16 +28,16 @@ def saring_radius(lat1, lon1, lat2, lon2):
     jarak = R * c
     return jarak
 
-def filtered(locations, center_lat, center_lon, radius):
+def saring_radius(locations, center_lat, center_lon, radius):
     # Lokasi yang berada dalam radius
     filtered_locations = []
     
     for name, (lat, lon) in locations.items():
         # Hitung jarak ke pusat
-        jarak = saring_radius(center_lat, center_lon, lat, lon)
+        jarak_pusat = jarak(center_lat, center_lon, lat, lon)
         
         # Jika jarak dalam radius, tambahkan ke daftar yang terfilter
-        if jarak <= radius:
+        if jarak_pusat <= radius:
             filtered_locations.append(name)
     
     return filtered_locations

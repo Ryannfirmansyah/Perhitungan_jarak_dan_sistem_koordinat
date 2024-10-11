@@ -1,7 +1,7 @@
 #Fungsi untuk menghitung jarak tengah antar koordinat.
 #FERA
 
-def midpoint(lat1, lon1, lat2, lon2):
+def titik_tengah(lat1, lon1, lat2, lon2):
     def to_radian(degree):
         return degree * (3.141592653589793 / 180)
     
@@ -60,3 +60,4 @@ def atan2(y, x):
 
 def atan(x):
     return x - (x**3 / 3) + (x**5 / 5) - (x**7 / 7)
+ 
