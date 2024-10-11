@@ -19,7 +19,7 @@
 Untuk menginstal package ini, Anda dapat menggunakan pip:
 
 ```bash
-pip install Perhitungan_jarak_dan_sistem_koordinat
+pip install mapsku
 ```
 ### Dalam modul calculate_distance
 ### 1. Fungsi `midpoint(lat_makassar: float, lon_makassar: float, lat_jakarta: float, lon_jakarta: float) -> tuple`
