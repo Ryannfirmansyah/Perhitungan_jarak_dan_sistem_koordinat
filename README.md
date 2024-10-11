@@ -1,7 +1,7 @@
 ## Deskripsi Tipe Data dan Contoh Penggunaan
-# Perhitungan_jarak_dan_sistem_koordinat
+# MAPSKU (Perhitungan_jarak_dan_sistem_koordinat)
 
-`Perhitungan_jarak_dan_sistem_koordinat` adalah sebuah package Python yang dirancang untuk membantu programmer melakukan perhitungan jarak dan sistem koordinat, serta berbagai fitur terkait lainnya.
+MAPSKU adalah sebuah package Python yang dirancang untuk membantu programmer melakukan perhitungan jarak dan sistem koordinat, serta berbagai fitur terkait lainnya.
 
 ## Fitur
 
