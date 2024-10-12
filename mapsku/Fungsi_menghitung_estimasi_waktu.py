@@ -1,6 +1,6 @@
 #(points, speed): Fungsi untuk estimasi waktu mengunjungi beberapa titik.
 #VELIN
-def e2t(jarak, kecepatan):
+def estimasi_waktu(jarak, kecepatan):
     """Hitung waktu tempuh berdasarkan jarak dan kecepatan.
 
     Args:
