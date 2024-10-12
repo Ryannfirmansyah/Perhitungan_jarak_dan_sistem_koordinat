@@ -86,7 +86,7 @@ pip install mapsku
       "Banjarmasin": (-3.316694, 114.590111)
   }
   
-  hasil_filter = filtered(locations, -6.208763, 106.845599, 1000)
+  hasil_filter = saring_radius(locations, -6.208763, 106.845599, 1000)
   print("Kota dalam radius 1000 km dari Jakarta:")
   for kota in hasil_filter:
       print(kota)
