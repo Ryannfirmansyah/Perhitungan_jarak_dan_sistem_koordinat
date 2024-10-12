@@ -1,22 +1,8 @@
 #(point, center_point): Fungsi untuk menghitung jarak ke titik pusat.
 #RYANNN
 
-
-def distance(lat, lon, lat_pusat, lon_pusat):
-    """
-    Menghitung jarak antara dua titik berdasarkan koordinat geografis (dalam derajat)
-    menggunakan rumus Haversine tanpa menggunakan modul math.
-
-    Parameters:
-    lat (float): Latitude titik.
-    lon (float): Longitude titik.
-    lat_pusat (float): Latitude titik pusat.
-    lon_pusat (float): Longitude titik pusat.
-
-    Returns:
-    float: Jarak dalam kilometer.
-    """
-    
+def jarak_koordinat(lat, lon, lat_pusat, lon_pusat):
+   
     R = 6371.0
 
     # Konversi derajat ke radian dengan rumus pi/180
