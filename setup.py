@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="mapsku",
-    version="1.0",
+    version="1.1",
     author="Kelompok 1 Algoritma & Pemrograman B",
     description="Package untuk perhitungan jarak dan fungsi sistem koordinat geografis",
     long_description=open("README.md", encoding="utf-8").read(),
